@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #09090b;
+  --color-surface: #18181b;
+  --color-text: #f4f4f5;
+  --color-text-muted: #a1a1aa;
+  --color-accent: #2dd4bf;
+}
+
+@layer base {
+  body {
+    @apply bg-[#09090b] text-[#f4f4f5] font-sans min-h-screen overflow-x-hidden selection:bg-[#2dd4bf] selection:text-[#09090b];
+    line-height: 1.6;
+  }
+}
+
+/* Utilities */
+.glass-panel {
+  @apply bg-zinc-900/50 backdrop-blur-sm border border-zinc-800;
+}
