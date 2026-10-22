@@ -1,47 +1,40 @@
-# AI Automation Consultant Portfolio
+# AI Automation Portfolio
 
-A modern, high-performance portfolio website designed for AI Automation Consultants and Specialists. Built with React, Tailwind CSS, and Vite, featuring a sleek "Dark Modern" aesthetic.
+A one-page portfolio for my AI automation consulting work. It lists the services I offer and walks through three of my workflows. It ends with a way to book a call. It's built with React, Vite and Tailwind CSS, and it's deployed to GitHub Pages at [janrizmlibres.github.io/automation-portfolio](https://janrizmlibres.github.io/automation-portfolio/).
 
-## 🚀 Features
+## What's on the page
 
--   **Modern Dark UI**: High-contrast Zinc & Teal color palette for a professional look.
--   **Responsive Design**: Fully optimized for mobile, tablet, and desktop.
--   **Interactive Elements**:
-    -   Typewriter effect header.
-    -   Smooth hover animations for services and portfolio cards.
-    -   Interactive profile section.
--   **Performance**: Fast loading times powered by Vite.
+- A header whose headline types itself out and rewrites in a loop.
+- A profile section with my portrait and background.
+- Six service cards, from workflow automation to training and support.
+- Three case studies. They are a UGC ads generator with Sora 2 built in n8n, and a client onboarding workflow and a lead follow-up system built in Make.com.
+- A contact section with email and a Calendly link to book a consultation.
 
-## 🛠️ Tech Stack
+The look is dark, in Tailwind's zinc and teal scales, with hover effects on the cards.
 
--   **Frontend**: React.js
--   **Styling**: Tailwind CSS
--   **Build Tool**: Vite
--   **Icons**: Native SVG / Emojis (Minimalist approach)
+## Running it
 
-## 🏃‍♂️ Getting Started
+You need Node.js and npm.
 
-1.  **Clone the repository**
-    ```bash
-    git clone <repository-url>
-    ```
+```bash
+git clone https://github.com/janrizmlibres/automation-portfolio.git
+cd automation-portfolio
+npm install
+npm run dev
+```
 
-2.  **Install dependencies**
-    ```bash
-    npm install
-    ```
+| Script | What |
+|---|---|
+| `npm run dev` | Vite dev server |
+| `npm run build` | Production build into `dist/` |
+| `npm run preview` | Serve the production build |
+| `npm run lint` | ESLint |
+| `npm run deploy` | Build, then publish `dist/` to the `gh-pages` branch |
 
-3.  **Start the development server**
-    ```bash
-    npm run dev
-    ```
+## Changing the content
 
-## 🎨 Customization
+The text, images and links live in the components under `src/components/`, and the images in `src/assets/`. The colors come from the zinc and teal scales in `tailwind.config.js`. `index.html.old` is the earlier plain-HTML version of the page, kept for reference.
 
--   **Colors**: Modify the `tailwind.config.js` to change the `zinc` or `teal` scales to your preferred brand colors.
--   **Content**: Update the component files in `src/components/` to change text, images, and links.
--   **Images**: Place your assets in `src/assets/`.
-
-## 📄 License
+## License
 
 MIT
