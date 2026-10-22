@@ -37,4 +37,4 @@ The text, images and links live in the components under `src/components/`, and t
 
 ## License
 
-MIT
+MIT. See [LICENSE](LICENSE).
